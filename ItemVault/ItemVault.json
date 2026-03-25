@@ -1,0 +1,13 @@
+{
+  "Author": "Sebaek98",
+  "Name": "ItemVault",
+  "Punchline": "Lock inventory items with tooltip warnings and named lists.",
+  "Description": "Right-click any inventory item to lock it. Locked items show a warning in their tooltip. Manage named lists (e.g. 'Crafting', 'Don't Sell') via /ivault.",
+  "ApplicableVersion": "any",
+  "Tags": [
+    "inventory",
+    "tooltip",
+    "lock",
+    "crafting"
+  ]
+}

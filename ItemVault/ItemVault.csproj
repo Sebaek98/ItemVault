@@ -1,0 +1,18 @@
+<Project Sdk="Dalamud.NET.Sdk/14.0.2">
+  <PropertyGroup>
+    <AssemblyName>ItemVault</AssemblyName>
+    <RootNamespace>ItemVault</RootNamespace>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <LangVersion>latest</LangVersion>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+
+  <ItemGroup>
+   
+    <DalamudLibraryReference Include="ImGui.NET" />
+    <DalamudLibraryReference Include="Lumina" />
+    <DalamudLibraryReference Include="Lumina.Excel" />
+  </ItemGroup>
+</Project>
