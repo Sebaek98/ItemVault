@@ -38,3 +38,11 @@ jobs:
         path: .\ItemVault\bin\x64\Release\ItemVault\*
         if-no-files-found: error
         retention-days: 1
+
+    - name: Upload to release
+      if: github.event_name == 'release'
+      run: |
+        Compress-Archive -Path .\ItemVault\bin\x64\Release\ItemVault\* -DestinationPath latest.zip
+        gh release upload ${{ github.event.release.tag_name }} latest.zip
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
