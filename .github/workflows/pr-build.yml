@@ -1,8 +1,10 @@
-name: Sample PR Builder for SamplePlugin
+name: ItemVault Build
 
 on:
   pull_request:
-    branches: [ master ]
+    branches: [ main ]
+  release:
+    types: [ published ]
 
 jobs:
 
@@ -10,7 +12,7 @@ jobs:
     runs-on: windows-2022
 
     env:
-      Solution_Name: SamplePlugin
+      Solution_Name: ItemVault
 
     steps:
     - name: Checkout
@@ -19,7 +21,7 @@ jobs:
     - name: Install .NET
       uses: actions/setup-dotnet@v5
       with:
-        dotnet-version: 9.0.x
+        dotnet-version: 10.0.x
 
     - name: Download Dalamud
       run: |
@@ -32,8 +34,7 @@ jobs:
     - name: Store artifacts
       uses: actions/upload-artifact@v4
       with:
-        name: SamplePlugin
-        path: .\SamplePlugin\bin\x64\Release\SamplePlugin\*
+        name: ItemVault
+        path: .\ItemVault\bin\x64\Release\ItemVault\*
         if-no-files-found: error
         retention-days: 1
-
