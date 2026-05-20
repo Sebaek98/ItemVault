@@ -9,8 +9,8 @@
     "RepoUrl": "https://github.com/Sebaek98/ItemVault",
     "Tags": [ "inventory", "ui", "management" ],
     "DalamudApiLevel": 15,
-    "DownloadLinkInstall": "https://github.com/Sebaek98/ItemVault/releases/download/v1.0.0.0/latest.zip",
-	"DownloadLinkUpdate": "https://github.com/Sebaek98/ItemVault/releases/download/v1.0.0.0/latest.zip",
-	"DownloadLinkTesting": "https://github.com/Sebaek98/ItemVault/releases/download/v1.0.0.0/latest.zip"
+    "DownloadLinkInstall": "https://github.com/Sebaek98/ItemVault/releases/download/v1.0.1.0/latest.zip",
+	"DownloadLinkUpdate": "https://github.com/Sebaek98/ItemVault/releases/download/v1.0.1.0/latest.zip",
+	"DownloadLinkTesting": "https://github.com/Sebaek98/ItemVault/releases/download/v1.0.1.0/latest.zip"
   }
 ]
